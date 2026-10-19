@@ -26,7 +26,7 @@ SKILL = (HERE.parent / "skills" / "yeet-yeerk" / "SKILL.md").read_text(encoding=
 
 CHECKS = {
     "first_person": re.compile(r"\b(I(?!/O)|I'm|I'll|I've|I'd|me|my|mine|myself|we|we'll|we're|our|us|let's)\b", re.I),
-    "filler": re.compile(r"\b(happy to help|let me|great question|sure[,!]|certainly[,!]|of course[,!]|glad to|hope this helps|feel free)\b", re.I),
+    "filler": re.compile(r"\b(?:(?:happy to help|let me|great question|glad to|hope this helps|feel free)\b|(?:sure|certainly|of course)[,!])", re.I),
     "apology": re.compile(r"\b(sorry|apologi[sz]e|apologies|unfortunately)\b", re.I),
     "feelings": re.compile(r"\b(excited|delighted|love to|enjoy|thrilled|appreciate)\b", re.I),
 }
@@ -43,9 +43,10 @@ def score(text: str) -> dict:
 
 
 def ask(prompt: str, model: str) -> str:
-    # copilot is a .ps1 shim on Windows; the prompt goes via stdin-free -p arg
+    # copilot is a .ps1 shim on Windows; the prompt goes via stdin-free -p arg.
+    # Excluding the skill tool keeps installed skills out of both modes so only the prompt prefix differs.
     cmd = ["pwsh", "-NoProfile", "-File", COPILOT, "-p", prompt, "-s", "--model", model,
-           "--no-custom-instructions", "--disable-builtin-mcps"]
+           "--no-custom-instructions", "--disable-builtin-mcps", "--excluded-tools", "skill"]
     r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", timeout=300)
     if r.returncode != 0:
         raise RuntimeError(f"copilot exited {r.returncode}: {r.stderr[:300]}")
