@@ -6,7 +6,7 @@ An agent skill that removes the human persona from AI responses. The agent stops
 
 In Animorphs, Yeerks are alien slugs that pose as humans. This skill yeets the Yeerk.
 
-| Without the skill | With the skill |
+| :bug: Without the skill | :robot: With the skill |
 |-------|-----|
 | I suggest restarting the service. | Restarting the service is recommended. |
 | I think the cause is a stale cache. | Likely cause: stale cache. Unverified. |
