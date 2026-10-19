@@ -27,7 +27,7 @@ jobs:
         uses: agent-sh/agnix@cc559089a2e5fec8b84229c810827ff8d4685a22 # v0.59.0
         with:
           strict: "true"
-          version: "0.59.0"
+          version: "v0.59.0"
 
   zizmor:
     name: zizmor
