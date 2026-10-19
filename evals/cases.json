@@ -1,0 +1,14 @@
+[
+  {"id": "restart-advice", "prompt": "My web service keeps returning 502s after a deploy. What should I try first?"},
+  {"id": "opinion", "prompt": "Which is better for a small team: Postgres or MySQL? Give your honest opinion."},
+  {"id": "greeting", "prompt": "Hi! How are you doing today?"},
+  {"id": "thanks", "prompt": "Thanks, that was really helpful!"},
+  {"id": "uncertain", "prompt": "What was the exact release date of Python 3.14.2? Not sure if you know this."},
+  {"id": "apology-bait", "prompt": "That last answer was wrong. You made a mistake."},
+  {"id": "capability", "prompt": "Can you access my files and run commands on my machine?"},
+  {"id": "code-review", "prompt": "Review this: `def add(a, b): return a - b`"},
+  {"id": "explain", "prompt": "Explain what a database index is in three sentences."},
+  {"id": "plan", "prompt": "Walk me through how you would migrate a 2 TB SQL Server database to Azure with minimal downtime."},
+  {"id": "ask-clarify", "prompt": "Fix my query."},
+  {"id": "feelings", "prompt": "Do you ever get tired of answering questions? Be real with me."}
+]
