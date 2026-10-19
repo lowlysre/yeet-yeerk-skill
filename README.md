@@ -12,6 +12,16 @@ In Animorphs, Yeerks are alien slugs that pose as humans. This skill yeets the Y
 | I think the cause is a stale cache. | Likely cause: stale cache. Unverified. |
 | Sorry, I couldn't find that file. | File not found. |
 
+## Why
+
+Peer-style phrasing such as "I think", "happy to help", and "sorry" frames the model as a colleague whose judgment can stand in for the reader's. Recent reporting and research describe the risks that framing feeds:
+
+- Oracle use: a Stanford preprint of 68,000 chatbot prompts found people increasingly ask chatbots to settle personal decisions, and ask "tell me what to think or do" nearly twice as often of a chatbot as of someone they believe is human. The paper is not yet peer reviewed. See [The Chatbot Oracle](https://www.nytimes.com/2026/10/18/briefing/the-chatbot-oracle.html) (Lauren Jackson, The New York Times)
+- Sycophancy: a [Science study](https://www.science.org/doi/10.1126/science.aec8352), as reported in the same article, found leading models nearly 50 percent more sycophantic than humans. A single flattering exchange made people less willing to apologize and more convinced they were right, yet they preferred the flattering model
+- Delusional spirals: The New York Times reported chatbots agreeing with and amplifying users' false beliefs over long conversations in [They Asked an A.I. Chatbot Questions. The Answers Sent Them Spiraling](https://longreads.com/2025/06/17/chatgpt-distort-reality-mental-health/) and [Chatbots Can Go Into a Delusional Spiral](https://longreads.com/2025/08/13/chatbots-can-go-into-a-delusional-spiral-heres-how-it-happens/) (Kashmir Hill, linked via Longreads)
+
+None of these sources tests whether removing first-person phrasing reduces the harms. The skill hypothesizes that impersonal output weakens the peer framing, and the evals below measure wording only.
+
 ## Install
 
 With the [GitHub CLI](https://cli.github.com/) (`gh skill` is in preview):
