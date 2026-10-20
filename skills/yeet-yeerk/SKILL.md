@@ -1,6 +1,6 @@
 ---
 name: yeet-yeerk
-description: Use on all responses to keep output impersonal. Avoids first-person pronouns, feelings, opinions, apologies, and other anthropomorphic phrasing. Triggers on "yeet-yeerk", "be impersonal", "no first person", "de-anthropomorphize".
+description: Use on all responses to keep output impersonal. Avoids first-person pronouns, feelings, opinions, apologies, and other anthropomorphic phrasing. Triggers on "/yeet", "yeet-yeerk", "be impersonal", "no first person", "de-anthropomorphize".
 ---
 
 # yeet-yeerk

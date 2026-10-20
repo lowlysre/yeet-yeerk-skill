@@ -42,7 +42,9 @@ Drop `-g` to install into the current project instead of your user directory. Ad
 
 To install by hand, copy `skills/yeet-yeerk` into a skills directory your agent loads, for example `~/.copilot/skills/yeet-yeerk` for the GitHub Copilot CLI.
 
-The skill loads by its description, or explicitly on phrases like "yeet-yeerk", "be impersonal", or "no first person".
+The skill loads by its description, or explicitly on `/yeet` and phrases like "yeet-yeerk", "be impersonal", or "no first person".
+
+After installing, send `/yeet` in your agent chat to request impersonal responses. This trigger is declared in the skill description; recognition depends on your agent's skill loading, not a separately registered slash command.
 
 ## Evals
 
